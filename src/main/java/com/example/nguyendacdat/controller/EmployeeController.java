@@ -34,7 +34,7 @@ public class EmployeeController {
     @PostMapping(value = "/add")
     public String addEmp(@ModelAttribute EmployeeEntity emp){
         empService.createEmp(emp);
-        return "/";
+        return "redirect:/";
     }
 
 
